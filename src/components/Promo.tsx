@@ -19,19 +19,33 @@ export default function Promo() {
         <motion.div style={{ y }} className="relative w-full h-full">
           <img
             src="/images/spiral-circles.jpg"
-            alt="Abstract spiral circles"
+            alt="Эпоха Просвещения — абстракция"
             className="w-full h-full object-cover"
+            style={{ filter: "sepia(60%) brightness(0.5)" }}
           />
         </motion.div>
       </div>
 
-      <h3 className="absolute top-12 right-6 text-white uppercase z-10 text-sm md:text-base lg:text-lg">
-        Анатомия возможностей
-      </h3>
+      <div className="absolute inset-0 bg-black/50" />
 
-      <p className="absolute bottom-12 right-6 text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-5xl z-10">
-        Каждая секция — рамка для твоей истории. Формируй её, миксуй и позволь контенту
-        литься в неожиданные паттерны, заставляя листать дальше.
+      <p className="absolute top-12 right-6 text-amber-300 uppercase z-10 text-xs md:text-sm tracking-[0.3em]">
+        Эпоха Просвещения
+      </p>
+
+      <div className="relative z-10 text-center text-white px-6 max-w-4xl">
+        <p className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+          «Разум —<br />
+          <span className="italic font-light">единственный</span><br />
+          судья»
+        </p>
+        <p className="text-neutral-300 text-lg md:text-xl font-light">
+          Вольтер
+        </p>
+      </div>
+
+      <p className="absolute bottom-12 left-6 right-6 text-neutral-400 text-sm z-10 text-center max-w-2xl mx-auto leading-relaxed">
+        XVIII век подарил миру идеи свободы, равенства и разума —
+        воплощённые в камне, холсте, словах и бронзе
       </p>
     </div>
   );
